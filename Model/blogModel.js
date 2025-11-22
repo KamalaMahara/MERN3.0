@@ -3,13 +3,12 @@ const blogSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
-    unique: true,
   },
   subtitle: {
     type: String,
   },
-  Description: {
-    type: Text,
+  description: {
+    type: String,
   },
   image: {
     type: String,
