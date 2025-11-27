@@ -4,7 +4,7 @@ const storage = multer.diskStorage({
     cb(null, "./storage"); //folder name where files are stored
   },
   filename: function (req, files, cb) {
-    cb(null, "kmla-" + files.originalname); //custom file name
+    cb(null, Date.now() + files.originalname); //custom file nameMiddleware/configMulter.js
   },
 });
 module.exports = { storage, multer };
